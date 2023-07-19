@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     오랜만이다 23
+     마지막 테스트2
     </div>
   );
 }
