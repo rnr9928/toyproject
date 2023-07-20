@@ -1,29 +1,21 @@
-// src/App.js
-import React, { useState } from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Top from './components/top/Top'
+import Intro from './components/intro/Intro'
+import Portfolio from './components/Portfolio/Portfolio'
+import Contact from './components/contact/Contact'
 
-function App() {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleColaClick = () => {
-    console.log("클릭됨?")
-    setIsActive(true);
-
-    setTimeout(() => {
-      setIsActive(false);
-    }, 1000);
-  };
-
+const App = () => {
   return (
-    <div className="Card">
-      <img
-        className={`Cola${isActive ? ' active' : ''}`}
-        src="img/cola.png"
-        alt="콜라 이미지"
-        onClick={handleColaClick}
-      />
+    <div className='app'>
+      <Top/>
+    <div className='sections'>
+      <Intro/>
+      <Portfolio/>
+      <Contact/>
     </div>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App
