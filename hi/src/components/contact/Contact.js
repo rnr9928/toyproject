@@ -1,8 +1,11 @@
 import React from 'react'
+import {ContactBackColor} from "../../styled/Contact"
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <ContactBackColor/>
+    </div>
   )
 }
 

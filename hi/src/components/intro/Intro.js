@@ -1,9 +1,13 @@
 import React from 'react'
 import '../../styled/Intro'
+import { A } from '../../styled/Intro'
 
 const Intro = () => {
   return (
-    <div>Intro</div>
+    <div>
+      <A/>
+      
+    </div>
   )
 }
 

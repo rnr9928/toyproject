@@ -3,7 +3,7 @@ import '../../styled/Portfolio'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <div></div>
   )
 }
 
