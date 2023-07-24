@@ -1,10 +1,10 @@
 import React from 'react'
-import { WorkBackColor } from '../../styled/Work'
+import  '../../styled/Work.scss'
 
 const Work = () => {
   return (
-    <div>
-        <WorkBackColor/>
+    <div className='works' id='works'>
+       
     </div>
   )
 }

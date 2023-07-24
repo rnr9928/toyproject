@@ -1,11 +1,11 @@
 import React from 'react'
-import '../../styled/Intro'
-import { A } from '../../styled/Intro'
+import '../../styled/Intro.scss'
+
 
 const Intro = () => {
   return (
-    <div>
-      <A/>
+    <div className='intro' id='intro'>
+    
       
     </div>
   )

@@ -1,10 +1,10 @@
 import React from 'react'
-import {TestBackColor} from '../../styled/Test'
+import  '../../styled/Test.scss'
 
 const Test = () => {
   return (
-    <div>
-        <TestBackColor/>
+    <div className='test' id='test'>
+       
     </div>
   )
 }

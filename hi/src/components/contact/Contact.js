@@ -1,10 +1,10 @@
 import React from 'react'
-import {ContactBackColor} from "../../styled/Contact"
+import  "../../styled/Contact.scss"
 
 const Contact = () => {
   return (
-    <div>
-      <ContactBackColor/>
+    <div className='contact' id='contact'>
+     
     </div>
   )
 }
