@@ -7,12 +7,14 @@ import Contact from './components/contact/Contact'
 import Work from './components/work/Work'
 import Test from './components/test/Test'
 import { useState } from 'react'
+import  Menu  from './components/menu/Menu'
 
 const App = () => {
   const [menuOpen,setMenuOpen] = useState(false)
   return (
     <div className='app'>
       <Top menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
     <div className='sections'>
       <Intro/>
       <Portfolio/>
