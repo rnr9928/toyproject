@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Work from './components/work/Work'
 import Test from './components/test/Test'
+
 import { useState } from 'react'
 import  Menu  from './components/menu/Menu'
 
@@ -16,6 +17,7 @@ const App = () => {
       <Top menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
     <div className='sections'>
+      
       <Intro/>
       <Portfolio/>
       <Work/>
