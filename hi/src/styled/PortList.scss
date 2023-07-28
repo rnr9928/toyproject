@@ -1,0 +1,12 @@
+li{
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.active{
+        background-color: red;
+        color: white;
+    }
+}
