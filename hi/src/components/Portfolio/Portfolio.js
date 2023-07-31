@@ -1,22 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../styled/Portfolio.scss'
 import PortList from '../portfolioList/PortList'
+import { Teamproject,Toyproject,
+Blog } from '../data/Data'
 
 const Portfolio = () => {
  
   const [select,setSelect] = useState("web1")
+  const [data,setData] = useState([])
   const list = [
     {
-      id: "web1",
-      title: "Web1"
+      id: "Teamproject",
+      title: "TeamProject"
     },
     {
-      id: "web2",
-      title: "Web2"
+      id: "Toyproject",
+      title: "ToyProject"
     },
     {
-      id: "web3",
-      title: "Web3"
+      id: "Blog",
+      title: "Blog"
     },
     {
       id: "web4",
@@ -31,6 +34,24 @@ const Portfolio = () => {
       title: "Web6"
     },
   ]
+
+  useEffect(()=>{
+
+    switch(select){
+      case "Teamproject":
+        setData(Teamproject);
+        break;
+      case "Toyproject":
+        setData(Toyproject);
+        break;
+      case "Blog":
+        setData(Blog);
+        break;
+        default:
+          setData(Teamproject)
+    }
+  },[select])  
+
   return (
     <div className='port' id='port'>
         <h1>Portfolio</h1>
@@ -44,30 +65,15 @@ const Portfolio = () => {
           ))}
         </ul>
         <div className='box'>
-          <div className='item'>
+
+          {data.map((i)=> (
+            <div className='item'>
             <img src='img/1.png'/>
-            <h3>Web</h3>
+
+            <h3>{i.title}</h3>
           </div>
-          <div className='item'>
-            <img src='img/1.png'/>
-            <h3>Web</h3>
-          </div>
-          <div className='item'>
-            <img src='img/1.png'/>
-            <h3>Web</h3>
-          </div>
-          <div className='item'>
-            <img src='img/1.png'/>
-            <h3>Web</h3>
-          </div>
-          <div className='item'>
-            <img src='img/1.png'/>
-            <h3>Web</h3>
-          </div>
-          <div className='item'>
-            <img src='img/1.png'/>
-            <h3>Web</h3>
-          </div>
+          ))} 
+
         </div>
     </div>
   )
